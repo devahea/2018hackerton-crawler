@@ -194,6 +194,8 @@ dependencies {
     testCompile "org.mockito:mockito-core"
     testCompile "com.mattbertolini:liquibase-slf4j"
     testCompile "org.hamcrest:hamcrest-library"
+
+    compile "com.machinepublishers:jbrowserdriver:1.0.0"
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 
