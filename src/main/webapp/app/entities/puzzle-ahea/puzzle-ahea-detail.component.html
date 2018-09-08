@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="puzzle">
+            <h2><span jhiTranslate="aheaCrawlerApp.puzzle.detail.title">Puzzle</span> {{puzzle.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="aheaCrawlerApp.puzzle.size">Size</span></dt>
+                <dd>
+                    <span>{{puzzle.size}}</span>
+                </dd>
+                <dt><span jhiTranslate="aheaCrawlerApp.puzzle.source">Source</span></dt>
+                <dd>
+                    <span>{{puzzle.source}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/puzzle-ahea', puzzle.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

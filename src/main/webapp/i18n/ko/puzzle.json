@@ -1,0 +1,23 @@
+
+{
+    "aheaCrawlerApp": {
+        "puzzle" : {
+            "home": {
+                "title": "Puzzles",
+                "createLabel": "Create a new Puzzle",
+                "createOrEditLabel": "Create or edit a Puzzle"
+            },
+            "created": "A new Puzzle is created with identifier {{ param }}",
+            "updated": "A Puzzle is updated with identifier {{ param }}",
+            "deleted": "A Puzzle is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Puzzle {{ id }}?"
+            },
+            "detail": {
+                "title": "Puzzle"
+            },
+            "size": "Size",
+            "source": "Source"
+        }
+    }
+}
